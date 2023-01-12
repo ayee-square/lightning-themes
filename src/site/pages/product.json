@@ -1,13 +1,20 @@
 {
     "template": "templates/pages/product",
     "template_properties": {
-        "name": "Product"
+        "name": "Bryan"
     },
     "resources": {
         "item": [
             {
                 "id": "{path.product_id}",
                 "ref": "routeBasedItem"
+            },
+            {
+                "id": "4"
+            },
+            {
+                "id": "7",
+                "ref": "recommendedItem"
             }
         ]
     }
