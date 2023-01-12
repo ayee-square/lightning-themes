@@ -1,0 +1,4 @@
+{
+    "lightning": "lightning",
+    "/products/:product_id": "product"
+}

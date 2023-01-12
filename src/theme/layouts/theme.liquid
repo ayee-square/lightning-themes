@@ -1,0 +1,10 @@
+<html>
+	<head>
+		<title>Lightning Theme</title>
+
+		{{ 'css/base.css' | asset_url | stylesheet_tag }}
+	</head>
+	<body>
+		{{ content_for_layout }}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "template": "templates/pages/product",
+    "template_properties": {
+        "name": "Product"
+    },
+    "resources": {
+        "item": [
+            {
+                "id": "{path.product_id}",
+                "ref": "routeBasedItem"
+            }
+        ]
+    }
+}
