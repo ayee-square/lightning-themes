@@ -1,34 +1,39 @@
 {% include 'partials/header' %}
 
-<h1> {{ name }} </h1>
+<h1>
+  {{ name }}
+</h1>
 
 <div>
-  <p> {{ blurb }} </p>
+  <p>
+    {{ blurb }}
+  </p>
 
-  Is this working?? ? ?
+  Is this working?? ? ? ?
+  this is from my repo
   {% paginate hello by 10 %}
     {% for item in hello %}
-      <h2>{{item}}</h2>
+      <h2>{{ item }}</h2>
     {% endfor %}
     {{ paginate | default_pagination }}
   {% endpaginate %}
 </div>
 
 {% comment %}
-  {% raw %}
-    This is an example of what a template schema could look like that would define the params a template expects
-    {% schema %}
-      {
-        "name": {
-          "type": "string",
-          "default": "Page Name"
-        },
+{% raw %}
+This is an example of what a template schema could look like that would define the params a template expects
+{% schema %}
+{
+"name": {
+"type": "string",
+"default": "Page Name"
+},
 
-        "blurb": {
-          "type": "string",
-          "default": "Blurb about the page"
-        }
-      }
-    {% endschema %}
-  {% endraw %}
+"blurb": {
+"type": "string",
+"default": "Blurb about the page"
+}
+}
+{% endschema %}
+{% endraw %}
 {% endcomment %}

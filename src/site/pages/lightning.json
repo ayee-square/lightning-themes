@@ -108,6 +108,9 @@
     "resources": {
         "siteSnapshot": true,
         "item": [
-        ]
+        ],
+        "all_items": {
+            "pagination_key": "items"
+        }
     }
 }
